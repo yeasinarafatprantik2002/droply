@@ -10,3 +10,4 @@ if (!sqlUrl) {
 }
 
 export const db = drizzle(sqlUrl, { schema });
+export type DB = typeof db;
