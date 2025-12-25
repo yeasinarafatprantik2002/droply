@@ -2,9 +2,9 @@ import * as z from "zod";
 
 export const signUpSchema = z.object({
   identifier: z
-    .string()
+    .email("Please enter a valid email address")
     .min(1, "Email is required")
-    .email("Please enter a valid email address"),
+    .max(255, "Email must be at most 255 characters long"),
 
   password: z
     .string()
