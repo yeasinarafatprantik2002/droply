@@ -48,6 +48,5 @@ export const filesRelations = relations(files, ({ one, many }) => ({
 }));
 
 // type definitions for file/folder structure
-
 export const File = typeof files.$inferSelect;
 export const NewFile = typeof files.$inferInsert;
